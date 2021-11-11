@@ -1,10 +1,10 @@
 const dynamoose = require('dynamoose');
 
 const peopleSchema = new dynamoose.Schema({
-	id: Number,
+	id: String,
 	name: String,
 	age: Number,
-	location: String,
+	gender: String,
 });
 
 const peopleTable = dynamoose.model('people', peopleSchema);

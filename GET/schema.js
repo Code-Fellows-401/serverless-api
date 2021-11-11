@@ -7,6 +7,6 @@ const peopleSchema = new dynamoose.Schema({
 	gender: String,
 });
 
-const peopleTable = dynamoose.model('lab-18-people', peopleSchema);
+const peopleTable = dynamoose.model('people', peopleSchema);
 
 module.exports = peopleTable;
